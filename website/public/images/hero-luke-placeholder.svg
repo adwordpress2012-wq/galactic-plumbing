@@ -1,73 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" fill="none" role="img" aria-label="Luke from Galactic Plumbing beside the Galactic Plumbing van">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 700" fill="none" role="img" aria-label="Luke from Galactic Plumbing beside a branded Galactic Plumbing van">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="55%" stop-color="#f5faff"/>
-      <stop offset="100%" stop-color="#e8f3ff"/>
+    <linearGradient id="van" x1="560" y1="154" x2="740" y2="572" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a314c"/>
+      <stop offset=".55" stop-color="#061a33"/>
+      <stop offset="1" stop-color="#031326"/>
     </linearGradient>
-    <linearGradient id="uniform" x1="0.5" y1="0" x2="0.5" y2="1">
-      <stop offset="0%" stop-color="#2b7de9"/>
-      <stop offset="100%" stop-color="#1565d8"/>
+    <linearGradient id="glass" x1="606" y1="196" x2="763" y2="318" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#dff1ff"/>
+      <stop offset="1" stop-color="#6daee8"/>
     </linearGradient>
-    <linearGradient id="vanBody" x1="0" y1="0.5" x2="1" y2="0.5">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f0f7ff"/>
+    <linearGradient id="shirt" x1="316" y1="234" x2="361" y2="638" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b2a4f"/>
+      <stop offset=".5" stop-color="#061a33"/>
+      <stop offset="1" stop-color="#031326"/>
     </linearGradient>
-    <linearGradient id="vanStripe" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#0a2540"/>
-      <stop offset="50%" stop-color="#1565d8"/>
-      <stop offset="100%" stop-color="#2b7de9"/>
+    <linearGradient id="skin" x1="311" y1="97" x2="372" y2="277" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f7cfad"/>
+      <stop offset="1" stop-color="#d68b5f"/>
     </linearGradient>
+    <linearGradient id="blueSweep" x1="534" y1="424" x2="784" y2="513" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22b8ff"/>
+      <stop offset=".55" stop-color="#005bea"/>
+      <stop offset="1" stop-color="#1687ff"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="20" flood-color="#031326" flood-opacity=".20"/>
+    </filter>
+    <filter id="personShadow" x="-30%" y="-20%" width="160%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#031326" flood-opacity=".26"/>
+    </filter>
+    <clipPath id="vanClip">
+      <path d="M491 231c0-24 19-43 43-43h167c24 0 45 14 54 36l43 103c6 14 9 29 9 44v122c0 31-25 56-56 56H521c-31 0-56-25-56-56V280c0-27 22-49 49-49h-23Z"/>
+    </clipPath>
   </defs>
 
-  <rect width="640" height="720" fill="url(#bg)"/>
-  <ellipse cx="320" cy="640" rx="280" ry="36" fill="#0a2540" opacity="0.05"/>
+  <rect width="820" height="700" fill="#fff"/>
+  <ellipse cx="489" cy="630" rx="307" ry="42" fill="#031326" opacity=".08"/>
 
-  <!-- Galactic van (right) -->
-  <g transform="translate(248 268)">
-    <rect x="0" y="88" width="320" height="118" rx="14" fill="url(#vanBody)" stroke="#c5daf0" stroke-width="2"/>
-    <rect x="12" y="100" width="296" height="36" rx="6" fill="url(#vanStripe)"/>
-    <text x="160" y="126" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="1.5">GALACTIC PLUMBING</text>
-    <rect x="24" y="148" width="88" height="44" rx="8" fill="#0a2540"/>
-    <text x="68" y="176" text-anchor="middle" fill="#93c5fd" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">G</text>
-    <rect x="200" y="148" width="96" height="52" rx="8" fill="#e8f3ff" stroke="#c5daf0" stroke-width="1.5"/>
-    <rect x="212" y="160" width="72" height="28" rx="4" fill="#1565d8" opacity="0.15"/>
-    <circle cx="72" cy="214" r="26" fill="#0a2540" opacity="0.85"/>
-    <circle cx="72" cy="214" r="14" fill="#64748b"/>
-    <circle cx="248" cy="214" r="26" fill="#0a2540" opacity="0.85"/>
-    <circle cx="248" cy="214" r="14" fill="#64748b"/>
-    <path d="M280 88h40l28 48H280V88z" fill="#ffffff" stroke="#c5daf0" stroke-width="2"/>
-    <rect x="288" y="96" width="52" height="32" rx="4" fill="#e8f3ff" stroke="#c5daf0"/>
+  <g filter="url(#softShadow)">
+    <path d="M491 231c0-24 19-43 43-43h167c24 0 45 14 54 36l43 103c6 14 9 29 9 44v122c0 31-25 56-56 56H521c-31 0-56-25-56-56V280c0-27 22-49 49-49h-23Z" fill="url(#van)"/>
+    <g clip-path="url(#vanClip)">
+      <path d="M565 211h122c18 0 34 11 41 28l26 64H565v-92Z" fill="url(#glass)"/>
+      <path d="M466 338h345v38H466v-38Z" fill="#0c2748"/>
+      <path d="M462 423c74 21 126 31 198 11 54-15 88-14 146 8v61c-58-20-96-22-151-5-71 21-124 11-193-12v-63Z" fill="url(#blueSweep)" opacity=".88"/>
+      <path d="M489 452c65 14 106 14 161-4 52-17 90-15 142 8" stroke="#22b8ff" stroke-width="7" stroke-linecap="round" opacity=".75"/>
+      <path d="M506 474c53 11 91 10 138-5 43-14 81-15 131 4" stroke="#1687ff" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+    </g>
+    <path d="M520 188h147l11-33c3-9 11-15 21-15h14" stroke="#1f2937" stroke-width="10" stroke-linecap="round"/>
+    <path d="M590 153h161" stroke="#303947" stroke-width="14" stroke-linecap="round"/>
+    <path d="M596 134h151" stroke="#3e4653" stroke-width="11" stroke-linecap="round"/>
+    <path d="M601 116h139" stroke="#4b5563" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="552" cy="552" r="44" fill="#031326"/>
+    <circle cx="552" cy="552" r="25" fill="#7b8796"/>
+    <circle cx="552" cy="552" r="12" fill="#d4dce7"/>
+    <circle cx="735" cy="552" r="44" fill="#031326"/>
+    <circle cx="735" cy="552" r="25" fill="#7b8796"/>
+    <circle cx="735" cy="552" r="12" fill="#d4dce7"/>
+    <text x="594" y="339" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="900" letter-spacing="1">GALACTIC</text>
+    <text x="596" y="374" fill="#22b8ff" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" letter-spacing=".5">PLUMBING SERVICES</text>
+    <g transform="translate(641 253) scale(1.2)">
+      <path d="M32 6a26 26 0 0 1 22.4 38.8" stroke="#eaf4ff" stroke-width="5" stroke-linecap="round"/>
+      <path d="M38 10a20 20 0 0 1 16.2 32.4" stroke="#1687ff" stroke-width="4" stroke-linecap="round"/>
+      <path d="M32 20c-5.2 0-9.5 5.8-9.5 12.8 0 6.2 6.8 15.2 9.5 15.2s9.5-9 9.5-15.2C41.5 25.8 37.2 20 32 20Z" fill="#22b8ff"/>
+    </g>
   </g>
 
-  <!-- Luke — smiling plumber -->
-  <g transform="translate(48 120)">
-    <!-- legs -->
-    <path d="M108 420h52l8 88H100l8-88z" fill="#0a2540"/>
-    <path d="M168 420h52l8 88h-60l8-88z" fill="#0a2540"/>
-    <!-- torso / uniform -->
-    <path d="M88 248c0-12 88-12 176 0v196H88V248z" fill="url(#uniform)"/>
-    <rect x="108" y="292" width="136" height="52" rx="8" fill="#0a2540" opacity="0.92"/>
-    <text x="176" y="326" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1">GALACTIC</text>
-    <!-- arms -->
-    <path d="M72 268c-28 8-40 52-32 88 8 36 40 48 56 28" fill="#1565d8" stroke="#134e84" stroke-width="2"/>
-    <path d="M280 268c28 8 40 52 32 88-8 36-40 48-56 28" fill="#1565d8" stroke="#134e84" stroke-width="2"/>
-    <!-- neck -->
-    <rect x="148" y="218" width="56" height="36" rx="10" fill="#f4c9a8"/>
-    <!-- head -->
-    <ellipse cx="176" cy="178" rx="72" ry="78" fill="#f4c9a8"/>
-    <!-- hair -->
-    <path d="M112 168c8-44 72-52 96-28 20 20 16 52 8 72-24-8-52-12-80-4-8-24-12-28-24-40z" fill="#3d2914"/>
-    <!-- eyes -->
-    <ellipse cx="152" cy="168" rx="8" ry="10" fill="#1e293b"/>
-    <ellipse cx="200" cy="168" rx="8" ry="10" fill="#1e293b"/>
-    <circle cx="154" cy="165" r="2.5" fill="#ffffff"/>
-    <circle cx="202" cy="165" r="2.5" fill="#ffffff"/>
-    <!-- smile -->
-    <path d="M144 198c12 18 56 18 68 0" stroke="#b45309" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <g filter="url(#personShadow)">
+    <path d="M273 292c-43 22-67 73-70 132 22 20 49 22 76 6l14-76-20-62Z" fill="#0a2a4f"/>
+    <path d="M444 292c43 22 67 73 70 132-22 20-49 22-76 6l-14-76 20-62Z" fill="#08213f"/>
+    <path d="M276 286c34-28 130-29 166 0 19 74 17 171 5 292H271c-12-121-14-218 5-292Z" fill="url(#shirt)"/>
+    <path d="M288 327c42 21 92 25 151 0" stroke="#143c69" stroke-width="6" opacity=".65"/>
+    <path d="M338 265h44l7 36c-18 13-38 13-58 0l7-36Z" fill="#d7956b"/>
+    <path d="M321 120c20-34 83-34 106 0 9 14 13 33 10 57-7 66-39 94-81 94s-72-30-79-94c-3-24 4-43 44-57Z" fill="url(#skin)"/>
+    <path d="M292 157c13-54 60-76 106-62 32 10 49 35 48 67-43-12-77-26-106-54-10 25-24 39-48 49Z" fill="#1d1716"/>
+    <path d="M291 155c-17 9-15 40-1 52 5 4 12 3 14-4l-4-47c-2-2-5-2-9-1Z" fill="#d68b5f"/>
+    <path d="M440 155c17 9 15 40 1 52-5 4-12 3-14-4l4-47c2-2 5-2 9-1Z" fill="#d68b5f"/>
+    <path d="M328 178c8-7 20-7 29 0" stroke="#2c1c17" stroke-width="5" stroke-linecap="round"/>
+    <path d="M379 178c8-7 20-7 29 0" stroke="#2c1c17" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="344" cy="190" r="5" fill="#1d1716"/>
+    <circle cx="393" cy="190" r="5" fill="#1d1716"/>
+    <path d="M359 190c-2 15-8 28-15 38 12 6 26 6 38 0" stroke="#b66f4d" stroke-width="3" stroke-linecap="round" fill="none" opacity=".7"/>
+    <path d="M331 225c18 29 69 29 88 0" fill="#fff"/>
+    <path d="M331 225c18 29 69 29 88 0" stroke="#8b4b36" stroke-width="5" stroke-linecap="round"/>
+    <path d="M318 246c30 27 78 27 108 0" stroke="#4f2d23" stroke-width="12" stroke-linecap="round" opacity=".35"/>
+    <path d="M278 117c20-51 139-54 174 0l-8 32c-50-21-106-21-158 0l-8-32Z" fill="#061a33"/>
+    <path d="M286 118c49-20 101-20 158 0" stroke="#1687ff" stroke-width="4" stroke-linecap="round"/>
+    <text x="365" y="137" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="900" letter-spacing="1">GALACTIC</text>
+    <text x="365" y="153" text-anchor="middle" fill="#22b8ff" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="800">PLUMBING</text>
+    <path d="M318 356c25 39 57 57 96 53 26-2 45-20 48-42 2-17-9-30-25-31-31 26-64 26-100 0-17-1-27 5-19 20Z" fill="#f1b48a"/>
+    <path d="M266 365c23 38 52 57 87 61 17 2 32-6 37-21 5-16-2-29-17-37-32 4-58-7-78-34-16-5-29 13-29 31Z" fill="#e3a27a"/>
+    <path d="M279 587h162l8 72H271l8-72Z" fill="#07172b"/>
+    <rect x="314" y="355" width="98" height="45" rx="12" fill="#061a33" opacity=".92"/>
+    <text x="363" y="383" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="900" letter-spacing="1">GALACTIC</text>
+    <text x="363" y="398" text-anchor="middle" fill="#22b8ff" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="800">PLUMBING SERVICES</text>
+    <rect x="269" y="558" width="178" height="34" rx="7" fill="#3a2a1d"/>
+    <rect x="334" y="552" width="47" height="44" rx="6" fill="#1b1410"/>
+    <circle cx="359" cy="573" r="13" fill="#d6a15b"/>
+    <path d="M238 566h45v81h-45v-81Z" fill="#3a2a1d"/>
+    <path d="M451 566h45v81h-45v-81Z" fill="#3a2a1d"/>
+    <rect x="246" y="533" width="13" height="70" rx="6" fill="#9a5b2d"/>
+    <rect x="474" y="527" width="13" height="77" rx="6" fill="#b35d30"/>
+    <rect x="492" y="542" width="12" height="64" rx="6" fill="#d19438"/>
   </g>
-
-  <!-- subtle ground line -->
-  <rect x="0" y="598" width="640" height="122" fill="#0a2540" opacity="0.03"/>
-  <text x="320" y="688" text-anchor="middle" fill="#64748b" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">Western Sydney · Licensed &amp; Insured</text>
 </svg>

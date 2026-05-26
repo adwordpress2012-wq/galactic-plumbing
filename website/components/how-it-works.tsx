@@ -27,8 +27,8 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="border-t border-slate-200 bg-slate-50 py-16 sm:py-20">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <section className="bg-brand-sky/45 py-12 sm:py-14">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <SectionHeading
           eyebrow="Simple booking flow"
           title="How It Works"
@@ -36,16 +36,16 @@ export function HowItWorks() {
           align="center"
         />
 
-        <ol className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((item) => (
             <li
               key={item.step}
-              className="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+              className="relative rounded-lg border border-slate-200 bg-white p-6 shadow-xl shadow-brand-navy/8"
             >
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-navy text-sm font-bold text-white">
+              <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-blue text-sm font-black text-white shadow-lg shadow-brand-blue/25">
                 {item.step}
               </span>
-              <h3 className="mt-4 text-lg font-bold text-brand-navy">
+              <h3 className="mt-4 text-lg font-black uppercase text-brand-deep-navy">
                 {item.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">

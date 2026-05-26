@@ -2,22 +2,26 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1e293b;
-  --brand-navy: #0a2540;
-  --brand-navy-light: #134e84;
-  --brand-blue: #1565d8;
-  --brand-highlight: #2b7de9;
-  --brand-sky: #e8f3ff;
+  --foreground: #061a33;
+  --brand-navy: #061a33;
+  --brand-deep-navy: #031326;
+  --brand-navy-light: #0d3568;
+  --brand-blue: #005bea;
+  --brand-highlight: #1687ff;
+  --brand-sky: #eaf4ff;
+  --brand-cyan: #22b8ff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-brand-navy: var(--brand-navy);
+  --color-brand-deep-navy: var(--brand-deep-navy);
   --color-brand-navy-light: var(--brand-navy-light);
   --color-brand-blue: var(--brand-blue);
   --color-brand-highlight: var(--brand-highlight);
   --color-brand-sky: var(--brand-sky);
+  --color-brand-cyan: var(--brand-cyan);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -27,6 +31,12 @@ html {
 }
 
 body {
-  background: var(--background);
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f7fbff 34%, #ffffff 100%);
   color: var(--foreground);
+}
+
+::selection {
+  background: #1687ff;
+  color: #ffffff;
 }

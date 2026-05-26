@@ -18,16 +18,16 @@ export function SectionHeading({
   return (
     <div className={`max-w-3xl ${alignClass}`}>
       {eyebrow ? (
-        <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand-blue">
+        <p className="mb-3 text-sm font-black uppercase tracking-wider text-brand-blue">
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl">
+      <h2 className="text-3xl font-black uppercase tracking-tight text-brand-deep-navy sm:text-4xl">
         {title}
         {highlight ? (
           <>
             {" "}
-            <span className="text-brand-highlight">{highlight}</span>
+            <span className="text-brand-blue">{highlight}</span>
           </>
         ) : null}
       </h2>

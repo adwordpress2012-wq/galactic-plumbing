@@ -39,12 +39,12 @@ export function MicahBubble() {
           <div
             role="dialog"
             aria-label="Micah booking assistant"
-            className="flex max-h-[calc(100vh-6rem)] w-[min(100vw-2rem,24rem)] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl"
+            className="flex max-h-[calc(100vh-6rem)] w-[min(100vw-2rem,24rem)] flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-2xl shadow-brand-navy/25"
           >
-            <div className="flex shrink-0 items-center justify-between bg-brand-navy px-4 py-3 text-white">
+            <div className="flex shrink-0 items-center justify-between bg-brand-deep-navy px-4 py-3 text-white">
               <div>
-                <p className="font-semibold">Micah</p>
-                <p className="text-xs text-blue-100">Booking assistant</p>
+                <p className="font-black">Micah</p>
+                <p className="text-xs font-semibold text-blue-100">Booking assistant</p>
               </div>
               <button
                 type="button"
@@ -52,12 +52,12 @@ export function MicahBubble() {
                 className="rounded-lg px-2 py-1 text-sm hover:bg-white/10"
                 aria-label="Close Micah chat"
               >
-                ✕
+                x
               </button>
             </div>
 
             <div className="space-y-4 overflow-y-auto p-4">
-              <p className="rounded-2xl rounded-tl-sm bg-brand-sky/50 p-3 text-sm text-slate-700">
+              <p className="rounded-xl rounded-tl-sm bg-brand-sky p-3 text-sm font-medium text-slate-700">
                 {greeting}
               </p>
 
@@ -71,29 +71,29 @@ export function MicahBubble() {
                 <input
                   type="text"
                   placeholder="Your name"
-                  className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-brand-blue"
+                  className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-brand-blue"
                   required
                 />
                 <input
                   type="tel"
                   placeholder="Phone number"
-                  className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-brand-blue"
+                  className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-brand-blue"
                   required
                 />
                 <input
                   type="text"
                   placeholder="Suburb"
-                  className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-brand-blue"
+                  className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-brand-blue"
                   required
                 />
                 <textarea
                   placeholder="Plumbing issue"
                   rows={3}
-                  className="w-full resize-none rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-brand-blue"
+                  className="w-full resize-none rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-brand-blue"
                   required
                 />
                 <select
-                  className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-brand-blue"
+                  className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-brand-blue"
                   defaultValue=""
                   required
                 >
@@ -101,13 +101,13 @@ export function MicahBubble() {
                     Urgency
                   </option>
                   <option value="emergency">Emergency</option>
-                  <option value="urgent">Urgent — today if possible</option>
-                  <option value="standard">Standard — this week</option>
+                  <option value="urgent">Urgent - today if possible</option>
+                  <option value="standard">Standard - this week</option>
                 </select>
                 <input
                   type="text"
                   placeholder="Preferred day / time"
-                  className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-brand-blue"
+                  className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-brand-blue"
                 />
                 <Button type="submit" className="w-full">
                   Send Booking Request
@@ -115,8 +115,7 @@ export function MicahBubble() {
               </form>
 
               <p className="text-center text-xs text-slate-500">
-                UI framework only — backend wiring coming soon. Luke will
-                confirm your booking personally.
+                UI framework only. Luke will confirm your booking personally.
               </p>
             </div>
           </div>
@@ -125,14 +124,14 @@ export function MicahBubble() {
         <button
           type="button"
           onClick={() => setOpen((value) => !value)}
-          className="flex items-center gap-2 rounded-full bg-brand-navy px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-navy/30 transition-transform hover:scale-[1.02] hover:bg-brand-navy-light"
+          className="flex items-center gap-2 rounded-full bg-brand-blue px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-2xl shadow-brand-blue/35 transition-transform hover:scale-[1.02] hover:bg-brand-highlight"
           aria-expanded={open}
           aria-label={open ? "Close Micah" : "Open Micah booking assistant"}
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-blue text-xs font-bold">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-deep-navy text-xs font-black">
             M
           </span>
-          <span className="hidden sm:inline">Micah — Take Your Booking</span>
+          <span className="hidden sm:inline">Micah - Take Your Booking</span>
           <span className="sm:hidden">Micah</span>
         </button>
       </div>

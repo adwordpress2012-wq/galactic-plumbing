@@ -1,23 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 72" fill="none" role="img" aria-label="Galactic Plumbing Services">
-  <!-- Icon: galactic swirl + water drop -->
-  <g transform="translate(4 4)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Galactic Plumbing">
+  <!-- Icon-only: galactic swirl + water drop (no wordmark) -->
+  <g transform="translate(-6 4)">
     <path
       d="M32 6a26 26 0 0 1 22.4 38.8"
-      stroke="#061a33"
+      stroke="#0a2540"
       stroke-width="5"
       stroke-linecap="round"
       fill="none"
     />
     <path
       d="M38 10a20 20 0 0 1 16.2 32.4"
-      stroke="#005bea"
+      stroke="#1565d8"
       stroke-width="4"
       stroke-linecap="round"
       fill="none"
     />
     <path
       d="M42 16a14 14 0 0 1 10.8 24.2"
-      stroke="#1687ff"
+      stroke="#2b7de9"
       stroke-width="3"
       stroke-linecap="round"
       fill="none"
@@ -25,40 +25,20 @@
     />
     <path
       d="M32 20c-5.2 0-9.5 5.8-9.5 12.8 0 6.2 6.8 15.2 9.5 15.2s9.5-9 9.5-15.2C41.5 25.8 37.2 20 32 20z"
-      fill="#005bea"
+      fill="#1565d8"
     />
     <path
       d="M32 24.5c-2.8 0-5 3.2-5 7.2 0 3.2 5 9.3 5 9.3s5-6.1 5-9.3c0-4-2.2-7.2-5-7.2z"
-      fill="#22b8ff"
+      fill="#2b7de9"
       opacity="0.55"
     />
     <path
       d="M18 44c2.5 3.8 8.2 6 14 6s11.5-2.2 14-6"
-      stroke="#1687ff"
+      stroke="#2b7de9"
       stroke-width="2.5"
       stroke-linecap="round"
       fill="none"
       opacity="0.75"
     />
   </g>
-
-  <!-- Wordmark -->
-  <text
-    x="88"
-    y="30"
-    fill="#061a33"
-    font-family="Inter, ui-sans-serif, system-ui, sans-serif"
-    font-size="22"
-    font-weight="700"
-    letter-spacing="0.14em"
-  >GALACTIC</text>
-  <text
-    x="88"
-    y="54"
-    fill="#005bea"
-    font-family="Inter, ui-sans-serif, system-ui, sans-serif"
-    font-size="13"
-    font-weight="600"
-    letter-spacing="0.22em"
-  >PLUMBING SERVICES</text>
 </svg>
