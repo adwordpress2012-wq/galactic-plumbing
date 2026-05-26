@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" fill="none" role="img" aria-label="Luke, Galactic Plumbing">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="overall" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f2744"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="720" fill="url(#sky)"/>
+  <rect x="0" y="560" width="640" height="160" fill="#0f2744" opacity="0.06"/>
+  <rect x="72" y="88" width="496" height="56" rx="28" fill="#ffffff" opacity="0.85"/>
+  <text x="320" y="124" text-anchor="middle" fill="#0f2744" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Luke · Galactic Plumbing</text>
+  <ellipse cx="320" cy="380" rx="148" ry="168" fill="#2563eb" opacity="0.12"/>
+  <circle cx="320" cy="268" r="78" fill="url(#overall)"/>
+  <path d="M248 332c0-40 32-72 72-72s72 32 72 72v168H248V332z" fill="url(#overall)"/>
+  <rect x="188" y="410" width="92" height="148" rx="22" fill="#1a3a5c" transform="rotate(14 234 484)"/>
+  <rect x="360" y="410" width="92" height="148" rx="22" fill="#1a3a5c" transform="rotate(-14 406 484)"/>
+  <rect x="96" y="500" width="448" height="88" rx="16" fill="#2563eb" opacity="0.18"/>
+  <rect x="140" y="528" width="120" height="40" rx="8" fill="#0f2744" opacity="0.2"/>
+  <circle cx="500" cy="548" r="18" fill="#0f2744" opacity="0.25"/>
+  <circle cx="548" cy="548" r="18" fill="#0f2744" opacity="0.25"/>
+  <text x="320" y="548" text-anchor="middle" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="14">On-site · Western Sydney</text>
+</svg>
