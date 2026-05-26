@@ -113,15 +113,18 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-2xl lg:max-w-none lg:self-end">
-          <Image
-            src="/images/hero-luke-placeholder.png"
-            alt="Luke from Galactic Plumbing beside the Galactic Plumbing van"
-            width={1536}
-            height={1024}
-            className="h-auto w-full object-contain drop-shadow-[0_30px_40px_rgba(3,19,38,0.20)]"
-            priority
-          />
+        <div className="relative mx-auto flex w-full max-w-2xl items-center justify-center lg:max-w-none lg:self-center lg:justify-end">
+          <div className="relative aspect-[428/310] w-full max-w-[620px] overflow-hidden">
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-20 bg-gradient-to-t from-white via-white/70 to-transparent" />
+            <Image
+              src="/images/plumber-guy1.png"
+              alt="Luke from Galactic Plumbing beside the Galactic Plumbing van"
+              width={483}
+              height={542}
+              className="absolute -top-[5.5%] right-0 h-auto w-[113%] max-w-none object-contain object-right"
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>
