@@ -115,10 +115,10 @@ export function Hero() {
 
         <div className="relative mx-auto w-full max-w-2xl lg:max-w-none lg:self-end">
           <Image
-            src="/images/hero-luke-placeholder.svg"
+            src="/images/hero-luke-placeholder.png"
             alt="Luke from Galactic Plumbing beside the Galactic Plumbing van"
-            width={820}
-            height={700}
+            width={1536}
+            height={1024}
             className="h-auto w-full object-contain drop-shadow-[0_30px_40px_rgba(3,19,38,0.20)]"
             priority
           />
