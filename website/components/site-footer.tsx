@@ -27,11 +27,21 @@ export function SiteFooter() {
               </li>
               <li>
                 <a
-                  href={`mailto:${site.email}`}
+                  href={`mailto:${site.emailBooking}`}
                   className="hover:text-brand-blue"
                 >
-                  {site.email}
+                  {site.emailBooking}
                 </a>
+                <span className="text-slate-400"> · bookings</span>
+              </li>
+              <li>
+                <a
+                  href={`mailto:${site.emailLuke}`}
+                  className="hover:text-brand-blue"
+                >
+                  {site.emailLuke}
+                </a>
+                <span className="text-slate-400"> · Luke</span>
               </li>
               <li>{site.serviceArea}</li>
             </ul>
