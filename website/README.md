@@ -7,7 +7,7 @@ Next.js one-page framework for [galacticplumbing.com.au](https://galacticplumbin
 - Next.js (App Router)
 - TypeScript
 - Tailwind CSS v4
-- Vercel deployment via repo root `vercel.json` (`rootDirectory: website`)
+- Vercel deployment via checked-in `vercel.json` config for both repo-root and `website` root builds
 
 ## Development
 
